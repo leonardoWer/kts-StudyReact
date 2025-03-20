@@ -1,0 +1,9 @@
+{
+  "name": "guide-kts-react",
+  "version": "1.0.0",
+  "description": "my first react app by kts-guide",
+  "main": "index.js",
+  "repository": "https://github.com/leonardoWer/kts-StudyReact.git",
+  "author": "leonardo_Wer",
+  "license": "MIT"
+}
