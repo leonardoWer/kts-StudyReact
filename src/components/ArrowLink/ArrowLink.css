@@ -1,0 +1,34 @@
+.arrow-link {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 5px;
+    overflow: hidden; /* Важно для обрезки */
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc; /* Серая полоса */
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Изначально скрыта */
+    height: 2px;
+    background-color: #000; /* Черная полоса при наведении */
+    transition: width 0.3s ease;
+    transform-origin: left; /* Заполняем слева направо */
+}
+
+
+.arrow-link:hover .arrow::after {
+    width: 100%; /* Заполняем всю ширину */
+}

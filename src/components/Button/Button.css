@@ -4,6 +4,7 @@ button {
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
+    margin: 4px 4px;
 }
 
 .button-black {
