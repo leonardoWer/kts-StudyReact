@@ -1,4 +1,14 @@
-.button {
+button {
+    border-radius: 8px;
+    border: 1px solid #646cff;
     padding: 16px;
     background-color: #646cff;
+    transition: border-color 0.25s;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button:hover {
+    scale: 1.01;
+    border-color: lightgray;
 }
