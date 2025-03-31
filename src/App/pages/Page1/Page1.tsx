@@ -7,7 +7,7 @@ const Page1 = () => {
             <div className="card">
                 <h1>Page 1</h1>
                 <UserCard />
-                <Button onClick={undefined} children={"Click Me"}></Button>
+                <Button children={"Click Me"} className="button-black" onClick={undefined} ></Button>
             </div>
         </>
     )

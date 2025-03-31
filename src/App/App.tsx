@@ -3,6 +3,7 @@ import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Page1 from "./pages/Page1";
+import Button from "../components/Button";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,10 +20,11 @@ function App() {
         </div>
         <h1>Vite + React</h1>
         <h3>by leonardo_Wer</h3>
+
         <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-              likes {count}
-            </button>
+            <Button className={"button-frame"} onClick={() => setCount((count) => count + 1)}>
+              Лайки {count}
+            </Button>
         </div>
 
         <Page1/>

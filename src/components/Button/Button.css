@@ -1,14 +1,22 @@
 button {
     border-radius: 8px;
-    border: 1px solid #646cff;
-    padding: 16px;
-    background-color: #646cff;
-    transition: border-color 0.25s;
+    padding: 12px 24px;
     font-size: 1em;
     font-weight: 500;
+    cursor: pointer;
 }
 
-button:hover {
-    scale: 1.01;
-    border-color: lightgray;
+.button-black {
+    color: white;
+    background-color: var(--dark-gray);
+    border: none;
+}
+
+.button-frame {
+    background-color: transparent;
+    border: 1px solid var(--dark-gray);
+    transition: border-color 0.25s;
+}
+.button-frame:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
