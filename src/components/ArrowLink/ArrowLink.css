@@ -4,7 +4,7 @@
     color: #333;
     text-decoration: none;
     padding-bottom: 5px;
-    overflow: hidden; /* Важно для обрезки */
+    overflow: hidden;
 }
 
 .arrow {
@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #ccc; /* Серая полоса */
+    background-color: #ccc;
 }
 
 .arrow::after {
@@ -23,12 +23,12 @@
     left: 0;
     width: 0; /* Изначально скрыта */
     height: 2px;
-    background-color: #000; /* Черная полоса при наведении */
+    background-color: var(--dark-gray);
     transition: width 0.3s ease;
-    transform-origin: left; /* Заполняем слева направо */
+    transform-origin: left;
 }
 
 
 .arrow-link:hover .arrow::after {
-    width: 100%; /* Заполняем всю ширину */
+    width: 100%;
 }
