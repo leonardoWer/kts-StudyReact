@@ -11,6 +11,13 @@ export type ProductCardProps = {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({image, subtitle, title, description, price}) => {
+    const [isInCart, setIsInCart] = React.useState(false);
+
+    const handleAddToCartClick = () => {
+        setIsInCart(!isInCart);
+    }
+
+
     return (
         <div className="product-card">
             <div className="product-card-image">
@@ -23,7 +30,10 @@ const ProductCard: React.FC<ProductCardProps> = ({image, subtitle, title, descri
 
             <div className="product-card-price-container">
                 <p className="product-card-price">{price}</p>
-                <Button className="button-black"  children={"В корзину"}/>
+                <Button className={isInCart ? "button-frame" : "button-black"}
+                        children={isInCart ? "Корзина" : "В корзину"}
+                        onClick={handleAddToCartClick}
+                />
             </div>
 
         </div>
